@@ -8,21 +8,10 @@ import (
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
 
-	simplepb "src/simple"
+	complexpb "github.com/sitthakarn/proto-go-simple/src/complex"
+	enumpb "github.com/sitthakarn/proto-go-simple/src/enum_example"
+	simplepb "github.com/sitthakarn/proto-go-simple/src/simple"
 )
-
-// import (
-// 	"fmt"
-// 	"io/ioutil"
-// 	"log"
-
-// 	complexpb "github.com/simplesteph/protobuf-example-go/src/complex"
-// 	enumpb "github.com/simplesteph/protobuf-example-go/src/enum_example"
-
-// 	"github.com/golang/protobuf/jsonpb"
-// 	"github.com/golang/protobuf/proto"
-// 	simplepb "github.com/simplesteph/protobuf-example-go/src/simple"
-// )
 
 func main() {
 	sm := doSimple()
