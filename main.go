@@ -82,7 +82,9 @@ func fromJSON(in string, pb proto.Message) {
 }
 
 func readAndWriteDemo(sm proto.Message) {
+
 	writeToFile("simple.bin", sm)
+
 	sm2 := &simplepb.SimpleMessage{}
 	readFromFile("simple.bin", sm2)
 	fmt.Println("Read the content:", sm2)
